@@ -1,3 +1,65 @@
+@font-face {
+  font-family: "$font-title";
+  src: "../../fonts/Shrikhand/Shrikhand-Regular.ttf";
+}
+@font-face {
+  font-family: "$font-txt";
+  src: "../../fonts/Roboto/Roboto-Thin.ttf";
+  font-weight: 100;
+}
+@font-face {
+  font-family: "$font-txt";
+  src: "../../fonts/Roboto/Roboto-Light.ttf";
+  font-weight: 300;
+}
+@font-face {
+  font-family: "$font-txt";
+  src: "../../fonts/Roboto/Roboto-Regular.ttf";
+  font-weight: 400;
+}
+@font-face {
+  font-family: "$font-txt";
+  src: "../../fonts/Roboto/Roboto-Medium.ttf";
+  font-weight: 500;
+}
+@font-face {
+  font-family: "$font-txt";
+  src: "../../fonts/Roboto/Roboto-Bold.ttf";
+  font-weight: 700;
+}
+@font-face {
+  font-family: "$font-txt";
+  src: "../../fonts/Roboto/Roboto-Black.ttf";
+  font-weight: 900;
+}
+* {
+  box-sizing: border-box;
+}
 
+.header {
+  width: 50%;
+}
+.header h1 {
+  width: 100%;
+  height: auto;
+}
+.header .logo {
+  object-fit: cover;
+}
+
+.card {
+  width: 90%;
+  height: 50vw;
+}
+.card > figcaption {
+  height: 10vw;
+}
+.card__img {
+  width: 90vw;
+  height: 40vw;
+}
+.card__img img {
+  object-fit: cover;
+}
 
 /*# sourceMappingURL=style.css.map */

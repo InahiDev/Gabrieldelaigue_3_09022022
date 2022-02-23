@@ -1,0 +1,14 @@
+.card {
+    width: 90%;
+    height: 50vw;
+    > figcaption {
+        height: 10vw;
+    }
+    &__img {
+        width: 90vw;
+        height: 40vw;
+        img {
+            object-fit: cover;
+        }
+    }
+}
