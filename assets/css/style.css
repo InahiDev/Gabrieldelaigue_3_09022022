@@ -109,4 +109,13 @@ body {
   outline: none;
 }
 
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  font-family: Roboto;
+}
+
 /*# sourceMappingURL=style.css.map */

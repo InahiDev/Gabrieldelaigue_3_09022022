@@ -1,0 +1,5 @@
+.introduction {
+    @include column;
+    padding: 30px 0;
+    font-family: $font-txt;
+}
