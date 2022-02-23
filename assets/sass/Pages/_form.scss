@@ -1,0 +1,25 @@
+.location {
+    @include row($align: baseline);
+    padding: 10px 0;
+    background-color: $bckground-grey-darker;
+    font-family: $font-txt;
+    box-shadow: inset 0 2px 5px #D6D6D6;
+    .fa-location-dot {
+        padding: 0 5px;
+    }
+    input {
+        border: none;
+        max-width: 160px;
+        background-color: $bckground-grey-darker;
+        padding-left: 10px;
+
+        &::placeholder {
+            color: black;
+            font-weight: 700;
+
+        }
+        &:focus {
+            outline: none;
+        }      
+    }
+}

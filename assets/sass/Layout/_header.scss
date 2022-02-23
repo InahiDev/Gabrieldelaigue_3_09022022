@@ -1,9 +1,13 @@
 .header {
-    width: 60%;
-    padding: 10px 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
     @include row;
-    .logo {
-        width: 100%;
-        object-fit: contain;
-    }
+    h1 {
+        width: 50%;
+        .logo {
+            width: 100%;
+            object-fit: contain;
+        }
+    } 
 }
