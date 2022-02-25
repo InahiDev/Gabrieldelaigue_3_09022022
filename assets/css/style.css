@@ -3,35 +3,49 @@
   src: "../../fonts/Shrikhand/Shrikhand-Regular.ttf";
 }
 @font-face {
-  font-family: "$font-txt";
+  font-family: "Roboto";
   src: "../../fonts/Roboto/Roboto-Thin.ttf";
   font-weight: 100;
 }
 @font-face {
-  font-family: "$font-txt";
+  font-family: "Roboto";
   src: "../../fonts/Roboto/Roboto-Light.ttf";
   font-weight: 300;
 }
 @font-face {
-  font-family: "$font-txt";
+  font-family: "Roboto";
   src: "../../fonts/Roboto/Roboto-Regular.ttf";
   font-weight: 400;
 }
 @font-face {
-  font-family: "$font-txt";
+  font-family: "Roboto";
   src: "../../fonts/Roboto/Roboto-Medium.ttf";
   font-weight: 500;
 }
 @font-face {
-  font-family: "$font-txt";
+  font-family: "Roboto";
   src: "../../fonts/Roboto/Roboto-Bold.ttf";
   font-weight: 700;
 }
 @font-face {
-  font-family: "$font-txt";
+  font-family: "Roboto";
   src: "../../fonts/Roboto/Roboto-Black.ttf";
   font-weight: 900;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -60,7 +74,7 @@ body {
   align-items: center;
 }
 .header h1 {
-  width: 50%;
+  width: 43%;
 }
 .header h1 .logo {
   width: 100%;
@@ -85,24 +99,27 @@ body {
 
 .location {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: baseline;
+  width: 100%;
   padding: 10px 0;
   background-color: #EAEAEA;
   font-family: Roboto;
   box-shadow: inset 0 2px 5px #D6D6D6;
 }
-.location .fa-location-dot {
-  padding: 0 5px;
+.location i {
+  margin-left: 28%;
+  margin-right: 4%;
+  color: #4d4d4d;
 }
 .location input {
   border: none;
-  max-width: 160px;
   background-color: #EAEAEA;
-  padding-left: 10px;
+  font-weight: 700;
 }
 .location input::placeholder {
-  color: black;
+  font-size: 95%;
+  color: #4d4d4d;
   font-weight: 700;
 }
 .location input:focus {
@@ -114,8 +131,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 80%;
   padding: 30px 0;
   font-family: Roboto;
+}
+.introduction h2 {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

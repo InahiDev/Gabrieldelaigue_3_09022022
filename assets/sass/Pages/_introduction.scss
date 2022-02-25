@@ -1,5 +1,9 @@
 .introduction {
     @include column;
+    width: 80%;
     padding: 30px 0;
     font-family: $font-txt;
+    h2 {
+        font-weight: 700;
+    }
 }
