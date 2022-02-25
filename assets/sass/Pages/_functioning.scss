@@ -4,29 +4,44 @@
     margin: 13% 0;
     @include column($align: flex-start);
     h2 {
-        font-size: 1.3rem;
+        font-size: 140%;
         font-weight: 900;
-        margin-left: 5%;
+        margin-left: 6%;
         margin-bottom: 4%;
     }
     &__stage {
         align-self: center;
         @include row($justify: flex-start);
         width: 80vw;
-        height: 18vw;
+        height: 16vw;
         margin: 2.5% 0;
         background-color: darken($bckground-color, 4%);
-        border-radius: 4vw / 5vw;
+        border-radius: 5vw;
+        box-shadow: 0 5px 10px 5px darken($bckground-color, 9%);
         p {
             @include row;
             width: 6vw;
             height: 6vw;
             position: relative;
             left: -3vw;
-            font-size: 0.9rem;
+            font-size: 90%;
             color: #FFF;
             background-color: $colour-primary;
             border-radius: 50%;
+        }
+        i {
+            font-size: 120%;
+            color: lighten($font-color, 50%);
+            margin: 0 6vw 0 3vw;
+        }
+        h3 {
+            font-weight: 700;
+        }
+        &--background {
+            background-color: lighten($colour-primary, 36%);
+            .fa-store {
+                color: $colour-primary;
+            }
         }
     }
 }
