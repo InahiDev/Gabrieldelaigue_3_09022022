@@ -83,6 +83,39 @@ body {
   object-fit: contain;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 7% 6%;
+  width: 100%;
+  color: white;
+  background-color: #333333;
+}
+footer h4 {
+  font-family: Shrikhand;
+  margin-bottom: 6%;
+}
+footer .footer-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 3%;
+}
+footer .footer-link i {
+  width: 6%;
+  margin-right: 2%;
+  font-size: 75%;
+}
+footer > a {
+  margin-bottom: 3%;
+}
+footer p {
+  color: white;
+}
+
 .location {
   display: flex;
   justify-content: flex-start;

@@ -1,0 +1,30 @@
+footer {
+    @include column ($align: flex-start);
+    padding: 7% 6%;
+    width: 100%;
+    color: lighten($font-color, 100%);
+    background-color: darken($bckground-color, 80%);
+    h4 {
+        font-family: $font-title;
+        margin-bottom: 6%;
+    }
+    .footer-link {
+        @include row($justify: flex-start);
+        width: 100%;
+        margin-bottom: 3%;
+        i {
+            width: 6%;
+            margin-right: 2%;
+            font-size: 75%;
+        }
+        a {
+            
+        }
+    }
+    > a {
+        margin-bottom: 3%;
+    }
+    p {
+        color: lighten($font-color, 100%);
+    }
+}
