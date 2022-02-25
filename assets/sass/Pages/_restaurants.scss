@@ -66,12 +66,13 @@
         @include column($justify: space-around, $align: flex-start);
         height: 100%;
         padding: 5% 0;
-        font-size: 105%;
         h3 {
+            font-size: 120%;
             font-weight: 900;
         }
         p {
-            font-weight: 300;
+            font-size: 110%;
+            font-weight: 400;
         }
     }
 }

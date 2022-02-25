@@ -281,13 +281,14 @@ footer p {
   align-items: flex-start;
   height: 100%;
   padding: 5% 0;
-  font-size: 105%;
 }
 .card__info h3 {
+  font-size: 120%;
   font-weight: 900;
 }
 .card__info p {
-  font-weight: 300;
+  font-size: 110%;
+  font-weight: 400;
 }
 
 .restaurants :nth-child(2) img, .restaurants :nth-child(4) img, .restaurants :nth-child(5) img {
