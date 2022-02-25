@@ -24,6 +24,8 @@
 .card {
     width: 100%;
     height: 100%;
+    border-radius: 4vw;
+    box-shadow: 0 5px 10px 5px darken($bckground-color, 9%);
     &__img {
         width: 100%;
         height: 70%;
@@ -56,7 +58,7 @@
         border-bottom-right-radius: 4vw ;
         background-color: $bckground-color;
         i {
-            
+            margin-right: 4%;
             font-size: 130%;
         }
     }
@@ -72,5 +74,14 @@
             font-weight: 300;
         }
     }
+}
+
+//Positionnement des images dans les cards
+.restaurants :nth-child(2) img, .restaurants :nth-child(4) img, .restaurants :nth-child(5) img {
+    object-position: center bottom;
+}
+
+.restaurants :nth-child(3) img {
+    object-position: left 50% bottom 38%;
 }
 
