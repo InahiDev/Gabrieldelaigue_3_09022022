@@ -83,22 +83,6 @@ body {
   object-fit: contain;
 }
 
-.card {
-  width: 90%;
-  height: 50vw;
-}
-.card > figcaption {
-  height: 10vw;
-}
-.card__img {
-  width: 90vw;
-  height: 40vw;
-}
-.card__img img {
-  display: none;
-  object-fit: cover;
-}
-
 .location {
   display: flex;
   justify-content: flex-start;
@@ -217,6 +201,21 @@ body {
 }
 .function__stage--background .fa-store {
   color: #9356DC;
+}
+
+.card {
+  width: 90%;
+  height: 50vw;
+}
+.card > figcaption {
+  height: 10vw;
+}
+.card__img {
+  width: 90vw;
+  height: 40vw;
+}
+.card__img img {
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
