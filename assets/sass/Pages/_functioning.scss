@@ -1,0 +1,9 @@
+.functioning {
+    align-self: flex-start;
+    margin: 13% 0;
+    padding: 0 5%;
+    @include column($align: flex-start);
+    h2 {
+        font-weight: 900;
+    }
+}

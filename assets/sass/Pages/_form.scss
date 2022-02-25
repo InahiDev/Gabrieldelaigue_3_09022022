@@ -2,21 +2,21 @@
     @include row($justify: flex-start, $align: baseline);
     width: 100%;
     padding: 10px 0;
-    background-color: $bckground-grey-darker;
+    background-color: darken($bckground-color, 9%);
     font-family: $font-txt;
     box-shadow: inset 0 2px 5px #D6D6D6;
     i {
         margin-left: 28%;
         margin-right: 4%;
-        color: lighten($font-color, 30%);
+        color: lighten($font-color, 20%);
     }
     input {
         border: none;
-        background-color: $bckground-grey-darker;
+        background-color: darken($bckground-color, 9%);
         font-weight: 700;
         &::placeholder {
             font-size: 95%;
-            color: lighten($font-color, 30%);
+            color: lighten($font-color, 20%);
             font-weight: 700;
         }
         &:focus {
