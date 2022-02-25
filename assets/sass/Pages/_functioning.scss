@@ -1,10 +1,32 @@
-.functioning {
+.function {
     align-self: flex-start;
+    width: 100%;
     margin: 13% 0;
-    padding: 0 5%;
     @include column($align: flex-start);
     h2 {
         font-size: 1.3rem;
         font-weight: 900;
+        margin-left: 5%;
+        margin-bottom: 4%;
+    }
+    &__stage {
+        align-self: center;
+        @include row($justify: flex-start);
+        width: 80vw;
+        height: 18vw;
+        margin: 2.5% 0;
+        background-color: darken($bckground-color, 4%);
+        border-radius: 4vw / 5vw;
+        p {
+            @include row;
+            width: 6vw;
+            height: 6vw;
+            position: relative;
+            left: -3vw;
+            font-size: 0.9rem;
+            color: #FFF;
+            background-color: $colour-primary;
+            border-radius: 50%;
+        }
     }
 }
