@@ -1,14 +1,76 @@
-.card {
-    width: 90%;
-    height: 50vw;
-    > figcaption {
-        height: 10vw;
+.restaurants {
+    @include column($align: flex-start);
+    width: 100%;
+    padding: 15% 6%;
+    background-color: darken($bckground-color, 4%);
+    h2 {
+        font-size: 140%;
+        font-weight: 900;
+        margin-bottom: 3.75%;
     }
-    &__img {
-        width: 90vw;
-        height: 40vw;
-        img {
-            object-fit: cover;
+    article {
+        width: 88vw;
+        height: 67vw;
+        border-radius: 4vw;
+        margin: 2.75% 0;
+        a {
+            width: 100%;
+            height: 100%;
+            border-radius: 4vw;
         }
     }
 }
+
+.card {
+    width: 100%;
+    height: 100%;
+    &__img {
+        width: 100%;
+        height: 70%;
+        position: relative;
+        > img {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 4vw;
+            border-top-right-radius: 4vw;
+            object-fit: cover;
+        }
+        .new {
+            @include row;
+            width: 21vw;
+            height: 8vw;
+            position: absolute;
+            top: 3vw;
+            right: 3vw;
+            background-color: $colour-tertiary;
+            &--hidden {
+                display: none;
+            }
+        }
+    }
+    > figcaption {
+        @include row($justify: space-between);
+        height: 30%;
+        padding: 0 4%;
+        border-bottom-left-radius: 4vw;
+        border-bottom-right-radius: 4vw ;
+        background-color: $bckground-color;
+        i {
+            
+            font-size: 130%;
+        }
+    }
+    &__info {
+        @include column($justify: space-around, $align: flex-start);
+        height: 100%;
+        padding: 5% 0;
+        font-size: 105%;
+        h3 {
+            font-weight: 900;
+        }
+        p {
+            font-weight: 300;
+        }
+    }
+}
+
