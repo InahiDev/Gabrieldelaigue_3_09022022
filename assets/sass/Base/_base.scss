@@ -43,11 +43,13 @@
 
 body {
     @include column;
+    font-family: $font-txt, sans-serif;
 }
 
 main {
     @include column;
 }
+
 * {
     box-sizing: border-box;
 }

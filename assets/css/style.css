@@ -37,6 +37,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: Roboto, sans-serif;
 }
 
 main {
@@ -133,7 +134,6 @@ body {
   align-items: center;
   width: 100%;
   padding: 40px 0;
-  font-family: Roboto;
   text-align: center;
   background-color: whitesmoke;
 }
@@ -170,6 +170,7 @@ body {
   align-items: flex-start;
 }
 .functioning h2 {
+  font-size: 1.3rem;
   font-weight: 900;
 }
 

@@ -4,6 +4,7 @@
     padding: 0 5%;
     @include column($align: flex-start);
     h2 {
+        font-size: 1.3rem;
         font-weight: 900;
     }
 }
