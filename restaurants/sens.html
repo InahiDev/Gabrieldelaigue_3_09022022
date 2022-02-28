@@ -6,14 +6,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/4e0dfc6c99.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style.css">    <title>Le délice des sens, Folie-Méricourt</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Le délice des sens, Folie-Méricourt</title>
 </head>
 <body>
     <header class="header">
         <a href='../accueil.html'><i class="fa-solid fa-arrow-left"></i></a>
         <h1><img src="../assets/img/logo/ohmyfood.png" alt="logo Ohmyfood" id="logo" class="logo"/></h1>
     </header>
+    <main>
+        <figure>
+            <img src="../assets/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Restaurant - Le délice des sens"/>
+            <figcaption>
+                <h2>Le délice des sens</h2><i class="fa-regular fa-heart"></i>
+            </figcaption>
+        </figure>
+        <form method="post" action="order.php">
+            <section class="course-type">
+                <h3>Entrées</h3>
+                <div class="line--tertiary"></div>
+
+                <div class="course">
+                    <div class="course__info">
+                        <label for="tartare">
+                            <span class="course__info__name">Tartare de thon</span><br/>
+                            Assaisonné au yuzu
+                        </label>
+                        <p class="price">25€</p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="tartare" id="tartare"/>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course__info">
+                        <label for="homard">
+                            <span class="course__info__name">Bouchée de homard croustillant</span><br/>
+                            Et sa farandole de petits légumes
+                        </label>
+                        <p class="price">35€</p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="homard" id="homard"/>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course__info">
+                        <label for="veloute">
+                            <span class="course__info__name">Velouté de cèpes</span><br/>
+                            Aux truffes
+                        </label>
+                        <p class="price">20€</p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="veloute" id="veloute"/>
+                    </div>
+                </div>
+            </section>
+
+            <section class="course-type">
+                <h3>Plats</h3>
+                <div class="line--tertiary"></div>
+
+                <div class="course">
+                    <div class="course__info">
+                        <label for="poulet">
+                            <span class="course__info__name">Poulet rôti aux herbes de provence</span><br/>
+                            Et sa crème de truffe
+                        </label>
+                        <p class="price">40€</p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="poulet" id="poulet"/>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course__info">
+                        <label for="langouste">
+                            <span class="course__info__name">Langouste rôtie</span><br/>
+                            Et ses légumes de saison
+                        </label>
+                        <p class="price">35€</p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="langouste" id="langouste"/>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course__info">
+                        <label for="angus">
+                            <span class="course__info__name">Côte de boeuf angus</span><br/>
+                            Et sa purée de panais
+                        </label>
+                        <p class="price">44€</p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="angus" id="angus"/>
+                    </div>
+                </div>
+            </section>
+           
+            <section class="course-type">
+                <h3>Desserts</h3>
+                <div class="line--tertiary"></div>
+
+                <div class="course">
+                    <div class="course__info">
+                        <label for="farandole">
+                            <span class="course__info__name">Farandole de desserts</span><br/>
+                            Du chef
+                        </label>
+                        <p class="price">18€</p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="farandole" id="farandole"/>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course_info">
+                        <label for="creme">
+                            <span class="course__info__name">Crème brulée</span><br/>
+                            Revisitée
+                        </label>
+                        <p class="price">22€</p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="creme" id="creme"/>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course__info">
+                        <label for="tiramisu">
+                            <span class="course__info__name">Tiramisu</span><br/>
+                            À la noisette
+                        </label>
+                        <p class="price">23€</p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="tiramisu" id="tiramisu"/>
+                    </div>
+                </div>
+            </section>
+            <input type="submit" value="Commander"/>
+        </form>
+    </main>
+    <footer>
+        <h4>Ohmyfood</h4>
+        <div class="footer-link">
+            <i class="fa-solid fa-utensils"></i>
+            <a href="#"><p>Proposer un restaurant</p></a>
+        </div>
+        <div class="footer-link">
+            <i class="fa-solid fa-handshake-angle"></i>
+            <a href="#"><p>Devenir partenaire</p></a>
+        </div>
+        <a href="#"><p>Mentions légales</p></a>
+        <a href="mailto:contact@ohmyfood.com"><p>Contact</p></a>
+    </footer>
 </body>
+</html>

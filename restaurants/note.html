@@ -6,14 +6,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/4e0dfc6c99.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style.css">    <title>La note enchantée, Charonne</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>La note enchantée, Charonne</title>
 </head>
 <body>
     <header class="header">
         <a href='../accueil.html'><i class="fa-solid fa-arrow-left"></i></a>
         <h1><img src="../assets/img/logo/ohmyfood.png" alt="logo Ohmyfood" id="logo" class="logo"/></h1>
     </header>
+    <main>
+        <figure>
+            <img src="../assets/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Restaurant - La note enchantée"/>
+            <figcaption>
+                <h2>La note enchantée</h2><i class="fa-regular fa-heart"></i>
+            </figcaption>
+        </figure>
+        <form method="post" action="order.php">
+            <section class="course-type">
+                <h3>Entrées</h3>
+                <div class="line--tertiary"></div>
+
+                <div class="course">
+                    <div class="course__info">
+                        <label for="ravioles">
+                            <span class="course__info__name">Ravioles de foie gras</span><br/>
+                            Accompagnées de leur crème à la truffe
+                        </label>
+                        <p class="price">25€</p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="ravioles" id="ravioles"/>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course__info">
+                        <label for="caviar">
+                            <span class="course__info__name">Caviar osciètre</span><br/>
+                            Sur blini à la farine de blé noir
+                        </label>
+                        <p class="price">35€</p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="caviar" id="caviar"/>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course__info">
+                        <label for="homard">
+                            <span class="course__info__name">Homard et espuma de</span><br/>
+                            Mariné aux zestes d'orange
+                        </label>
+                        <p class="price">20€</p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="homard" id="homard"/>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course__info">
+                        <label for="canard">
+                            <span class="course__info__name">Foie gras de canard cuit entier</span><br/>
+                            Confiture de figue et pain toasté
+                        </label>
+                        <p class="price">35€</p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="canard" id="canard"/>
+                    </div>
+                </div>
+            </section>
+
+            <section class="course-type">
+                <h3>Plats</h3>
+                <div class="line--tertiary"></div>
+
+                <div class="course">
+                    <div class="course__info">
+                        <label for="coquille">
+                            <span class="course__info__name">Noix de coquilles Saint-Jacques</span><br/>
+                            Sur lit de purée de céleri-rave
+                        </label>
+                        <p class="price">40€</p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="coquille" id="coquille"/>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course__info">
+                        <label for="langoustine">
+                            <span class="course__info__name">Langoustine poêlée</span><br/>
+                            Purée de patate douce
+                        </label>
+                        <p class="price">35€</p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="langoustine" id="langoustine"/>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course__info">
+                        <label for="boeuf">
+                            <span class="course__info__name">Mijoté de queue de boeuf</span><br/>
+                            Et riz sauvage aux zestes de citron
+                        </label>
+                        <p class="price">44€</p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="boeuf" id="boeuf"/>
+                    </div>
+                </div>
+            </section>
+           
+            <section class="course-type">
+                <h3>Desserts</h3>
+                <div class="line--tertiary"></div>
+
+                <div class="course">
+                    <div class="course__info">
+                        <label for="macaron">
+                            <span class="course__info__name">Macaron noisette et chocolat</span><br/>
+                            Glace au caramel brun et sel de Guérande
+                        </label>
+                        <p class="price">18€</p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="macaron" id="macaron"/>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course_info">
+                        <label for="baba">
+                            <span class="course__info__name">Baba au rhum revisité</span><br/>
+                            Avec son coulis de citron
+                        </label>
+                        <p class="price">22€</p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="baba" id="baba"/>
+                    </div>
+                </div>
+
+                <div class="course">
+                    <div class="course__info">
+                        <label for="tarte">
+                            <span class="course__info__name">Tarte au citron meringuée</span><br/>
+                            Destructurée
+                        </label>
+                        <p class="price">23€</p>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="tarte" id="tarte"/>
+                    </div>
+                </div>
+            </section>
+            <input type="submit" value="Commander"/>
+        </form>
+    </main>
+    <footer>
+        <h4>Ohmyfood</h4>
+        <div class="footer-link">
+            <i class="fa-solid fa-utensils"></i>
+            <a href="#"><p>Proposer un restaurant</p></a>
+        </div>
+        <div class="footer-link">
+            <i class="fa-solid fa-handshake-angle"></i>
+            <a href="#"><p>Devenir partenaire</p></a>
+        </div>
+        <a href="#"><p>Mentions légales</p></a>
+        <a href="mailto:contact@ohmyfood.com"><p>Contact</p></a>
+    </footer>
 </body>
+</html>
