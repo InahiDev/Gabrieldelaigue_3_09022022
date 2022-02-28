@@ -1,0 +1,23 @@
+.course {
+    @include row ($justify: flex-end);
+    width: 93%;
+    margin: 3% 0;
+    background-color: $bckground-color;
+    &__info {
+        @include row ($justify: space-between);
+        p {
+            align-self: flex-end
+        }
+    }
+    .checkbox {
+        @include row;
+        width: 17%;
+        height: inherit;
+        background-color: $colour-tertiary;
+        input {
+            &:checked {
+                
+            }
+        }
+    }
+}

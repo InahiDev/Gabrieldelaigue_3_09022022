@@ -26,6 +26,30 @@ a:visited {
   color: black;
 }
 
+.course {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 93%;
+  margin: 3% 0;
+  background-color: #FFF;
+}
+.course__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.course__info p {
+  align-self: flex-end;
+}
+.course .checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17%;
+  height: inherit;
+  background-color: #99E2D0;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -332,7 +356,7 @@ footer p {
 }
 .rest-fig figcaption h2 {
   font-family: Shrikhand;
-  font-size: 180%;
+  font-size: 190%;
 }
 .rest-fig figcaption i {
   font-size: 150%;
@@ -357,6 +381,9 @@ footer p {
 .course-type header {
   align-self: flex-start;
   margin-left: 6%;
+}
+.course-type header h3 {
+  margin-bottom: 5%;
 }
 .course-type .line--tertiary {
   width: 10vw;
