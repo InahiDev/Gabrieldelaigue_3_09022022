@@ -338,4 +338,25 @@ footer p {
   font-size: 150%;
 }
 
+.order {
+  width: 100%;
+}
+
+.course-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.course-type h3 {
+  align-self: flex-start;
+}
+.course-type .line--tertiary {
+  width: 10vw;
+  height: 1vw;
+  align-self: flex-start;
+  background-color: #99E2D0;
+}
+
 /*# sourceMappingURL=style.css.map */
