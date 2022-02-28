@@ -54,6 +54,7 @@ body {
 .header--menu .fa-arrow-left {
   font-size: 5vw;
   margin-left: 5vw;
+  margin-bottom: 2vw;
 }
 .header--menu h1 {
   margin-left: 20vw;
@@ -307,6 +308,34 @@ footer p {
 
 .restaurants :nth-child(3) img {
   object-position: left 50% bottom 38%;
+}
+
+.rest-fig {
+  height: 86vw;
+}
+.rest-fig img {
+  height: 85vw;
+  width: 100vw;
+  object-fit: cover;
+}
+.rest-fig figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vw;
+  padding: 0 6vw;
+  position: relative;
+  bottom: 20vw;
+  background-color: whitesmoke;
+  border-top-left-radius: 10vw;
+  border-top-right-radius: 10vw;
+}
+.rest-fig figcaption h2 {
+  font-family: Shrikhand;
+  font-size: 180%;
+}
+.rest-fig figcaption i {
+  font-size: 150%;
 }
 
 /*# sourceMappingURL=style.css.map */
