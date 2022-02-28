@@ -48,6 +48,16 @@ body {
   width: 100%;
   object-fit: contain;
 }
+.header--menu {
+  justify-content: flex-start;
+}
+.header--menu .fa-arrow-left {
+  font-size: 5vw;
+  margin-left: 5vw;
+}
+.header--menu h1 {
+  margin-left: 20vw;
+}
 
 footer {
   display: flex;
