@@ -339,7 +339,12 @@ footer p {
 }
 
 .order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  background-color: whitesmoke;
 }
 
 .course-type {
@@ -349,13 +354,13 @@ footer p {
   align-items: center;
   width: 100%;
 }
-.course-type h3 {
+.course-type header {
   align-self: flex-start;
+  margin-left: 6%;
 }
 .course-type .line--tertiary {
   width: 10vw;
   height: 1vw;
-  align-self: flex-start;
   background-color: #99E2D0;
 }
 
