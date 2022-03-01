@@ -1,5 +1,5 @@
 .course {
-    @include row ($justify: flex-end);
+    @include row ($justify: flex-end, $align: stretch);
     width: 93%;
     margin: 3% 0;
     background-color: $bckground-color;
@@ -7,32 +7,38 @@
     overflow: hidden;
     &__info {
         @include row ($justify: space-between);
-        flex: 1 0 77vw;
-        padding: 4%;
-
+        flex: 1 0 69vw;
+        padding: 10px;
+        //coder le padding en px ou em (valeur absolue)
+        label {
+            flex-grow: 1;
+            flex-basis: 57vw;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
         .price {
             align-self: flex-end;
             flex-basis: 12vw;
             text-align: center;
         }
-        label {
-            flex-grow: 1;
-            flex-basis: 65vw;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            line-height: 6vw;
-        }
         &__name {
-            white-space: normal;
-            font-size: 125%;
+            font-size: 110%;
             font-weight: 700;
-            line-height: normal;
+        }
+        .course__undertitle {
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-top: 2%;
+            font-size: 90%;
         }
     }
     .checkbox {
-        flex-basis: 16vw;
-        height: 100%;
+        width: 16vw;
+        min-width: 16vw;
+        //effacer height: 100% et faire que la valeur soit de 100% plus la somme des padding
         background-color: $colour-tertiary;
+        margin-right: -16vw;
     }
 }
