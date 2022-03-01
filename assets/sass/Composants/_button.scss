@@ -1,0 +1,15 @@
+.button {
+    @include row;
+    width: 53vw;
+    height: 12vw;
+    margin-bottom: 2%;
+    border-radius: 6vw / 50%;
+    font-size: 95%;
+    color: #FFF;
+    background: linear-gradient(to left top, $colour-primary, $colour-secondary);
+    border-width: 0;
+    box-shadow: 0 5px 10px 5px darken($bckground-color, 18%);
+    > p {
+        color: #FFF;
+    }
+}
