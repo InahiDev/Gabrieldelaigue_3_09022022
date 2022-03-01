@@ -48,8 +48,8 @@ a:visited {
   display: flex;
   justify-content: flex-end;
   align-items: stretch;
-  width: 93%;
-  margin: 3% 0;
+  width: 93vw;
+  margin: 2vw 0;
   background-color: #FFF;
   border-radius: 3vw;
   overflow: hidden;
@@ -59,30 +59,28 @@ a:visited {
   justify-content: space-between;
   align-items: center;
   flex: 1 0 69vw;
-  padding: 10px;
+  padding: 3vw;
 }
-.course__info label {
+.course__info .course__text {
   flex-grow: 1;
   flex-basis: 57vw;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.course__info .price {
-  align-self: flex-end;
-  flex-basis: 12vw;
-  text-align: center;
-}
-.course__info__name {
-  font-size: 110%;
+.course__info .course__text h4 {
+  font-size: 125%;
   font-weight: 700;
 }
-.course__info .course__undertitle {
-  display: block;
+.course__info .course__text p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-top: 2%;
-  font-size: 90%;
+}
+.course__info .price {
+  align-self: flex-end;
+  flex-basis: 12vw;
+  text-align: center;
 }
 .course .checkbox {
   width: 16vw;
@@ -118,11 +116,11 @@ body {
 }
 .header--menu .fa-arrow-left {
   font-size: 5vw;
-  margin-left: 5vw;
+  margin-left: 6vw;
   margin-bottom: 2vw;
 }
 .header--menu h1 {
-  margin-left: 20vw;
+  margin-left: 19vw;
 }
 
 footer {
@@ -393,7 +391,7 @@ footer p {
   font-size: 150%;
 }
 
-.order {
+.course-type {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -402,20 +400,12 @@ footer p {
   background-color: whitesmoke;
   z-index: 2;
 }
-
-.course-type {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
 .course-type header {
   align-self: flex-start;
-  margin-left: 6%;
+  margin-left: 6vw;
 }
 .course-type header h3 {
-  margin-bottom: 5%;
+  margin-bottom: 1vw;
 }
 .course-type .line--tertiary {
   width: 10vw;
