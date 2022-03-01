@@ -51,21 +51,38 @@ a:visited {
   width: 93%;
   margin: 3% 0;
   background-color: #FFF;
+  border-radius: 3vw;
+  overflow: hidden;
 }
 .course__info {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex: 1 0 77vw;
+  padding: 4%;
 }
-.course__info p {
+.course__info .price {
   align-self: flex-end;
+  flex-basis: 12vw;
+  text-align: center;
+}
+.course__info label {
+  flex-grow: 1;
+  flex-basis: 65vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 6vw;
+}
+.course__info__name {
+  white-space: normal;
+  font-size: 125%;
+  font-weight: 700;
+  line-height: normal;
 }
 .course .checkbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 17%;
-  height: inherit;
+  flex-basis: 16vw;
+  height: 100%;
   background-color: #99E2D0;
 }
 
@@ -348,6 +365,7 @@ footer p {
   height: 85vw;
   width: 100vw;
   object-fit: cover;
+  z-index: 0;
 }
 .rest-fig figcaption {
   display: flex;
@@ -356,10 +374,11 @@ footer p {
   height: 20vw;
   padding: 0 6vw;
   position: relative;
-  bottom: 20vw;
+  bottom: 19.6vw;
   background-color: whitesmoke;
   border-top-left-radius: 10vw;
   border-top-right-radius: 10vw;
+  z-index: 1;
 }
 .rest-fig figcaption h2 {
   font-family: Shrikhand;
@@ -376,6 +395,7 @@ footer p {
   align-items: center;
   width: 100%;
   background-color: whitesmoke;
+  z-index: 2;
 }
 
 .course-type {

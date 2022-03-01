@@ -1,7 +1,8 @@
 .order {
     @include column;
     width: 100%;
-    background-color: darken($bckground-color, 4%)
+    background-color: darken($bckground-color, 4%);
+    z-index: 2;
 }
 
 .course-type {
