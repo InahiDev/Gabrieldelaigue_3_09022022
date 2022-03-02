@@ -5,6 +5,7 @@
     background-color: $bckground-color;
     border-radius: 3vw;
     overflow: hidden;
+    box-shadow: 0 5px 10px 3px darken($bckground-color, 18%);
     &__info {
         @include row ($justify: space-between);
         flex: 1 0 69vw;
