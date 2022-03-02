@@ -38,14 +38,14 @@ a:visited {
   color: #FFF;
   background: linear-gradient(to left top, #9356DC, #FF79DA);
   border-width: 0;
-  box-shadow: 0 5px 10px 5px #d1d1d1;
+  box-shadow: 0 5px 10px 3px #d1d1d1;
 }
 .button > p {
   color: #FFF;
 }
 
 button.button {
-  margin: 9vw;
+  margin: 10vw 0;
 }
 
 .course {
@@ -182,7 +182,7 @@ footer p {
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
-  padding-bottom: 11vw;
+  padding-bottom: 10vw;
 }
 
 .location {

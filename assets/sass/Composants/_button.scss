@@ -8,12 +8,12 @@
     color: #FFF;
     background: linear-gradient(to left top, $colour-primary, $colour-secondary);
     border-width: 0;
-    box-shadow: 0 5px 10px 5px darken($bckground-color, 18%);
+    box-shadow: 0 5px 10px 3px darken($bckground-color, 18%);
     > p {
         color: #FFF;
     }
 }
 
 button.button {
-    margin: 9vw;
+    margin: 10vw 0;
 }
