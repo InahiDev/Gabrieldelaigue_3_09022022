@@ -1,22 +1,19 @@
 .rest-fig {
-    height: 86vw;
+    height: 78vw;
     img {
-        height: 85vw;
+        height: 75vw;
         width: 100vw;
         object-fit: cover;
-        z-index: 0;
-    }
-    &--note img {
-        object-position: 50% 85%;
     }
     figcaption {
         @include row($justify: space-between);
+        position: relative;
+        bottom: 15vw;
         height: 23vw;
         padding: 0 6vw;
         background-color: darken($bckground-color, 4%);
         border-top-left-radius: 10vw;
         border-top-right-radius: 10vw;
-        z-index: 1;
         h2 {
             font-family: $font-title;
             font-size: 190%;
