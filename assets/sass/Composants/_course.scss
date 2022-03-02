@@ -8,8 +8,7 @@
     &__info {
         @include row ($justify: space-between);
         flex: 1 0 69vw;
-        padding: 3vw;
-        //coder le padding en px ou em (valeur absolue)
+        padding: 4vw 3vw;
         .course__text {
             flex-grow: 1;
             flex-basis: 57vw;
@@ -30,15 +29,26 @@
             align-self: flex-end;
             flex-basis: 12vw;
             text-align: center;
+            font-weight: 700;
         }
         
         
     }
     .checkbox {
+        @include row;
         width: 16vw;
         min-width: 16vw;
-        //effacer height: 100% et faire que la valeur soit de 100% plus la somme des padding
         background-color: $colour-tertiary;
         margin-right: -16vw;
+        .fa-check {
+            @include row;
+            width: 5vw;
+            height: 5vw;
+            font-size: 90%;
+            color: $colour-tertiary;
+            transform: rotate(180deg);
+            background-color: $bckground-color;
+            border-radius: 50%;
+        }
     }
 }

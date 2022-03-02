@@ -1,0 +1,4 @@
+.menu-restaurant {
+    @include column;
+    background-color: darken($bckground-color, 4%);
+}
