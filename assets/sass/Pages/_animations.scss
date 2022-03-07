@@ -1,0 +1,18 @@
+//Remplissage des coeurs
+
+
+//Décalage des checkbox
+input{
+    opacity: 0;
+    position: absolute;
+}
+.course {
+    &:active + .checkbox{
+        margin-right: 0vw;
+        transition: margin-right 500ms ease-in-out;
+            .fa-check {
+            transform: rotate(0deg);
+            transition: rotate 5s 200ms ease-in-out;
+            }
+        }
+}
