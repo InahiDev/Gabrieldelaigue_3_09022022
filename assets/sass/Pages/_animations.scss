@@ -1,3 +1,37 @@
+//Loading spinner
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes loader {
+    0%, 100% {
+        opacity: 1;
+    }
+}
+.loading-spinner {
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    position: fixed;
+    background-color: rgba(darken($bckground-color, 18%),.5);
+    z-index: 1;
+    animation: loader (($turn-spinner * $iteration-spinner) + 200ms) ease-in-out;
+    @include column;
+    .fa-spinner {
+        font-size: 400%;
+        transform: rotate(0deg);
+        background: linear-gradient(to bottom, $colour-primary, $colour-secondary);
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: spinner $turn-spinner ease-in-out $iteration-spinner backwards;
+    }
+}
+
+
 //Apparition des plats
 @keyframes course {
     from {
@@ -29,7 +63,6 @@
         transition: opacity 300ms ease-in;
     }
 }
-
 
 //Décalage des checkbox
 @keyframes checkbox {
