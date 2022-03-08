@@ -19,6 +19,16 @@
 }
 
 //Remplissage des coeurs
+.card > figcaption .hearts, .rest-fig figcaption .hearts {
+    :first-child:hover {
+        opacity: 1;
+        transition: opacity 300ms ease-in;
+    }
+    :first-child:not(:hover) {
+        opacity: 0;
+        transition: opacity 300ms ease-in;
+    }
+}
 
 
 //Décalage des checkbox
@@ -35,20 +45,26 @@
 }
 
 .course {
-    &__info {
-        &:hover + .checkbox {
-            margin-right: 0vw;
-            transition: margin-right 350ms ease-in-out ;
-            .fa-check {
-                animation: checkbox 300ms 50ms linear forwards;
-            }
+    &:hover .course__info + .checkbox {
+        margin-right: 0vw;
+        transition: margin-right 350ms ease-in-out ;
+        .fa-check {
+            animation: checkbox 300ms 50ms linear forwards;
         }
-        &:not(:hover) + .checkbox {
-            margin-right: -16vw;
-            transition: margin-right 350ms ease-in-out;
-            .fa-check {
-                transform: translateX(0);
-            }
+    }
+    &:not(:hover) .course__info + .checkbox {
+        margin-right: -16vw;
+        transition: margin-right 350ms ease-in-out;
+        .fa-check {
+            transform: translateX(0);
         }
-    } 
+    }
+}
+
+//Survol des boutons
+.button{
+    &:hover {
+    background: linear-gradient(to left top, lighten($colour-primary, 2%), lighten($colour-secondary, 2%));
+    box-shadow:  0 5px 10px 3px darken($bckground-color, 30%);
+    }
 }

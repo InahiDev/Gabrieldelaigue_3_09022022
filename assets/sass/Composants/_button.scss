@@ -1,18 +1,16 @@
 .button {
     @include row;
-    width: 53vw;
-    height: 12vw;
-    margin-bottom: 2%;
-    border-radius: 6vw / 50%;
-    font-size: 95%;
+    width: 50%;
+    margin: 10% 0;
+    padding: 4% 0;
+    &--accueil {
+        margin: 0;
+        padding: 4% 0;
+    }
+    border-radius: 10% / 50%;
+    font-size: 85%;
     color: #FFF;
     background: linear-gradient(to left top, $colour-primary, $colour-secondary);
     border-width: 0;
     box-shadow: 0 5px 10px 3px darken($bckground-color, 18%);
-    > p {
-        color: #FFF;
-    }
-}
-button.button {
-    margin: 10vw 0;
 }

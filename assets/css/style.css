@@ -30,22 +30,19 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 53vw;
-  height: 12vw;
-  margin-bottom: 2%;
-  border-radius: 6vw/50%;
-  font-size: 95%;
+  width: 50%;
+  margin: 10% 0;
+  padding: 4% 0;
+  border-radius: 10%/50%;
+  font-size: 85%;
   color: #FFF;
   background: linear-gradient(to left top, #9356DC, #FF79DA);
   border-width: 0;
   box-shadow: 0 5px 10px 3px #d1d1d1;
 }
-.button > p {
-  color: #FFF;
-}
-
-button.button {
-  margin: 10vw 0;
+.button--accueil {
+  margin: 0;
+  padding: 4% 0;
 }
 
 .course {
@@ -185,7 +182,7 @@ footer p {
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
-  padding-bottom: 10vw;
+  padding-bottom: 10%;
 }
 
 .location {
@@ -364,9 +361,18 @@ footer p {
   border-bottom-right-radius: 4vw;
   background-color: #FFF;
 }
-.card > figcaption i {
+.card > figcaption .hearts {
   margin-right: 4%;
+}
+.card > figcaption .hearts i {
   font-size: 130%;
+}
+.card > figcaption .hearts :first-child {
+  position: absolute;
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
 }
 .card__info {
   display: flex;
@@ -417,8 +423,15 @@ footer p {
   font-family: Shrikhand;
   font-size: 190%;
 }
-.rest-fig figcaption i {
+.rest-fig figcaption .hearts i {
   font-size: 150%;
+}
+.rest-fig figcaption .hearts :first-child {
+  position: absolute;
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
 }
 
 .course-type {
@@ -470,6 +483,15 @@ footer p {
   animation-delay: 1000ms;
 }
 
+.card > figcaption .hearts :first-child:hover, .rest-fig figcaption .hearts :first-child:hover {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+.card > figcaption .hearts :first-child:not(:hover), .rest-fig figcaption .hearts :first-child:not(:hover) {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+
 @keyframes checkbox {
   0%, 20% {
     transform: translateX(-80%) rotate(180deg);
@@ -481,19 +503,24 @@ footer p {
     transform: translateX(0) rotate(360deg);
   }
 }
-.course__info:hover + .checkbox {
+.course:hover .course__info + .checkbox {
   margin-right: 0vw;
   transition: margin-right 350ms ease-in-out;
 }
-.course__info:hover + .checkbox .fa-check {
+.course:hover .course__info + .checkbox .fa-check {
   animation: checkbox 300ms 50ms linear forwards;
 }
-.course__info:not(:hover) + .checkbox {
+.course:not(:hover) .course__info + .checkbox {
   margin-right: -16vw;
   transition: margin-right 350ms ease-in-out;
 }
-.course__info:not(:hover) + .checkbox .fa-check {
+.course:not(:hover) .course__info + .checkbox .fa-check {
   transform: translateX(0);
+}
+
+.button:hover {
+  background: linear-gradient(to left top, #985ede, #ff83dd);
+  box-shadow: 0 5px 10px 3px #b3b3b3;
 }
 
 /*# sourceMappingURL=style.css.map */

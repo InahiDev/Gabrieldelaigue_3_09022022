@@ -57,9 +57,18 @@
         border-bottom-left-radius: 4vw;
         border-bottom-right-radius: 4vw ;
         background-color: $bckground-color;
-        i {
+        .hearts {
             margin-right: 4%;
-            font-size: 130%;
+            i {
+                font-size: 130%;
+            }
+            :first-child {
+                position: absolute;
+                background: linear-gradient(to bottom, $colour-primary, $colour-secondary);
+                -webkit-background-clip: text;
+                color: transparent;
+                opacity: 0;
+            }
         }
     }
     &__info {
