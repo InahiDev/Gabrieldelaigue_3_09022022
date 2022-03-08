@@ -2,17 +2,33 @@
 
 
 //Décalage des checkbox
-input{
-    opacity: 0;
-    position: absolute;
+@keyframes checkbox {
+    0%, 20% {
+        transform: translateX(-80%) rotate(180deg);
+    }
+    50% {
+        transform: translateX(-50%) rotate(270deg);
+    }
+    100% {
+        transform: translateX(0) rotate(360deg);
+    }
 }
+
 .course {
-    &:active + .checkbox{
-        margin-right: 0vw;
-        transition: margin-right 500ms ease-in-out;
+    &__info {
+        &:hover + .checkbox {
+            margin-right: 0vw;
+            transition: margin-right 350ms ease-in-out ;
             .fa-check {
-            transform: rotate(0deg);
-            transition: rotate 5s 200ms ease-in-out;
+                animation: checkbox 300ms 50ms linear forwards;
             }
         }
+        &:not(:hover) + .checkbox {
+            margin-right: -16vw;
+            transition: margin-right 350ms ease-in-out;
+            .fa-check {
+                transform: translateX(0);
+            }
+        }
+    } 
 }
