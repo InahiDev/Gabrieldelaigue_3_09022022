@@ -8,3 +8,8 @@ $bckground-color: #FFF;
 $font-title: Shrikhand;
 $font-txt: Roboto;
 $font-color: #000;
+
+//Animation
+$num-course: 4;
+$anim-course: 1000ms;
+$anim-course-delay: $anim-course / $num-course;
