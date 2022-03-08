@@ -1,25 +1,27 @@
 //Loading spinner
 @keyframes spinner {
-    0% {
+    from {
         transform: rotate(0deg);
     }
-    100% {
+    to {
         transform: rotate(360deg);
     }
 }
 @keyframes loader {
     0%, 100% {
         opacity: 1;
+        z-index: 1;
     }
 }
 .loading-spinner {
+    user-select: none;
     width: 100%;
     height: 100vh;
     opacity: 0;
     position: fixed;
-    background-color: rgba(darken($bckground-color, 18%),.5);
-    z-index: 1;
-    animation: loader (($turn-spinner * $iteration-spinner) + 200ms) ease-in-out;
+    background-color: rgba(darken($bckground-color,18%),.7);
+    z-index: -1;
+    animation: loader (($spinner-turn * $spinner-iteration) + $spinner-delay + 200ms) 200ms ease-in-out backwards;
     @include column;
     .fa-spinner {
         font-size: 400%;
@@ -27,7 +29,7 @@
         background: linear-gradient(to bottom, $colour-primary, $colour-secondary);
         -webkit-background-clip: text;
         color: transparent;
-        animation: spinner $turn-spinner ease-in-out $iteration-spinner backwards;
+        animation: spinner $spinner-turn ease-in-out $spinner-delay $spinner-iteration backwards;
     }
 }
 
