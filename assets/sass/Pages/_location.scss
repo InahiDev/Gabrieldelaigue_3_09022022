@@ -18,6 +18,7 @@
         &::placeholder {
             font-size: 100%;
             color: lighten($font-color, 20%);
+            opacity: 1;
             font-weight: 700;
         }
         &:focus {
