@@ -22,3 +22,14 @@
 }
 
 //MediaQueries
+@mixin tablet {
+    @media all and (min-width: map-get($breakpoints, tablet-min)) and (max-width: map-get($breakpoints, tablet-max)){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media all and (min-width: map-get($breakpoints, desktop)){
+        @content;
+    }
+}

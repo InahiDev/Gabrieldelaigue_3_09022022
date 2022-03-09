@@ -29,6 +29,7 @@ $box-shadow-sizing: 0 5px 10px 3px;
 
 //Mediaqueries map-breakpoints
 $breakpoints: (
-    tablet: 768px,
+    tablet-min: 768px,
+    tablet-max: 991px,
     desktop: 992px
 );

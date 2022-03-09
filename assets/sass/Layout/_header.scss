@@ -3,7 +3,7 @@
     padding-top: 5%;
     padding-bottom: 3%;
     @include row;
-    h1 {
+    h1, h2 {
         width: 43%;
         .logo {
             width: 100%;
@@ -17,8 +17,8 @@
             margin-left: 6vw;
             margin-bottom: 2vw;
         }
-        h1 {
-            margin-left: 19vw;
+        h2 {
+            margin-left: 18vw;
         }
     }
 }
