@@ -46,10 +46,10 @@
     }
 }
 .course {
-   animation: course $anim-course ease-in-out forwards;
-   @for $i from 1 through $num-course {
+   animation: course $course-duration ease-in-out forwards;
+   @for $i from 1 through $course-num {
        &--#{$i} {
-           animation-delay: $anim-course-delay * $i;
+           animation-delay: $course-delay * $i;
        }
    }
 }

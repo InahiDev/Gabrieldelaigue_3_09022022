@@ -10,9 +10,9 @@ $font-txt: Roboto;
 $font-color: #000;
 
 //Animation
-$num-course: 4;
-$anim-course: 1000ms;
-$anim-course-delay: $anim-course / $num-course;
+$course-num: 4;
+$course-duration: 1000ms;
+$course-delay: calc($course-duration / $course-num);
 $spinner-turn: 1000ms;
 $spinner-delay: 500ms;
 $spinner-iteration: 3;
