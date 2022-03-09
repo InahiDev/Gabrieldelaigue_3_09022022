@@ -15,9 +15,9 @@
         width: 80vw;
         height: 16vw;
         margin: 2.5% 0;
-        background-color: darken($bckground-color, 4%);
+        background-color: $background-color-light-darker;
         border-radius: 5vw;
-        box-shadow: 0 5px 10px 5px darken($bckground-color, 9%);
+        box-shadow: $box-shadow-sizing $background-color-darker;
         p {
             @include row;
             width: 6vw;

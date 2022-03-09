@@ -2,7 +2,7 @@
     @include row($justify: flex-start, $align: baseline);
     width: 100%;
     padding: 3% 0;
-    background-color: darken($bckground-color, 9%);
+    background-color: $background-color-darker;
     box-shadow: inset 0 2px 5px #D6D6D6;
     i {
         margin-left: 28%;
@@ -12,7 +12,7 @@
     }
     input {
         border: none;
-        background-color: darken($bckground-color, 9%);
+        background-color: $background-color-darker;
         font-size: 95%;
         font-weight: 700;
         &::placeholder {

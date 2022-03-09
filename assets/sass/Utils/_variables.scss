@@ -2,7 +2,11 @@
 $colour-primary: #9356DC;
 $colour-secondary: #FF79DA;
 $colour-tertiary: #99E2D0;
-$bckground-color: #FFF;
+$background-color: #FFF;
+$background-color-light-darker: darken($background-color, 4%);
+$background-color-darker: darken($background-color, 9%);
+$background-footer: darken($background-color, 80%);
+
 
 //Fonts
 $font-title: Shrikhand;
@@ -16,3 +20,15 @@ $course-delay: calc($course-duration / $course-num);
 $spinner-turn: 1000ms;
 $spinner-delay: 500ms;
 $spinner-iteration: 3;
+$background-shadow-darker: darken($background-color,18%);
+$background-boxes-shadow: darken($background-color, 30%);
+
+//Listes
+$box-shadow-sizing: 0 5px 10px 3px;
+
+
+//Mediaqueries map-breakpoints
+$breakpoints: (
+    tablet: 768px,
+    desktop: 992px
+);

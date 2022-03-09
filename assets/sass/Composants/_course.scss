@@ -2,10 +2,10 @@
     @include row ($justify: space-between, $align: stretch);
     width: 93vw;
     margin: 2vw 0;
-    background-color: $bckground-color;
+    background-color: $background-color;
     border-radius: 3vw;
     overflow: hidden;
-    box-shadow: 0 5px 10px 3px darken($bckground-color, 18%);
+    box-shadow: $box-shadow-sizing $background-shadow-darker;
     opacity: 0;
     &__info {
         @include row ($justify: flex-start);
@@ -50,7 +50,7 @@
             font-size: 90%;
             color: $colour-tertiary;
             transform: rotate(180deg);
-            background-color: $bckground-color;
+            background-color: $background-color;
             border-radius: 50%;
             transform: translateX(-80%);
         }

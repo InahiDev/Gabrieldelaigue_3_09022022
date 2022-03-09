@@ -2,7 +2,7 @@
     @include column($align: flex-start);
     width: 100%;
     padding: 15% 6%;
-    background-color: darken($bckground-color, 4%);
+    background-color: $background-color-light-darker;
     h2 {
         font-size: 140%;
         font-weight: 900;
@@ -25,7 +25,7 @@
     width: 100%;
     height: 100%;
     border-radius: 4vw;
-    box-shadow: 0 5px 10px 5px darken($bckground-color, 9%);
+    box-shadow: $box-shadow-sizing $background-color-darker;
     &__img {
         width: 100%;
         height: 70%;
@@ -56,7 +56,7 @@
         padding: 0 4%;
         border-bottom-left-radius: 4vw;
         border-bottom-right-radius: 4vw ;
-        background-color: $bckground-color;
+        background-color: $background-color;
         .hearts {
             margin-right: 4%;
             i {

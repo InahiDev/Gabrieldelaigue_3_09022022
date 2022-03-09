@@ -2,8 +2,8 @@ footer {
     @include column ($align: flex-start);
     padding: 7% 6%;
     width: 100%;
-    color: lighten($font-color, 100%);
-    background-color: darken($bckground-color, 80%);
+    color: #FFF;
+    background-color: $background-footer;
     h4 {
         font-family: $font-title;
         margin-bottom: 6%;
@@ -22,6 +22,6 @@ footer {
         margin-bottom: 3%;
     }
     p {
-        color: lighten($font-color, 100%);
+        color: #FFF;
     }
 }
