@@ -3,6 +3,11 @@ body {
     font-family: $font-txt, sans-serif;
     font-size: 4vw;
 }
+.body-rest {
+    @include desktop {
+        font-size: 2vw;
+    }
+}
 
 main {
     @include column;

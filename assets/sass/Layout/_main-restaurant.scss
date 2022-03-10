@@ -1,5 +1,9 @@
 .menu-restaurant {
     @include column;
+    @include desktop {
+        flex-flow: row wrap;
+        align-items: flex-start;
+    }
     background-color: $background-color-light-darker;
     padding-bottom: 10%;
 }

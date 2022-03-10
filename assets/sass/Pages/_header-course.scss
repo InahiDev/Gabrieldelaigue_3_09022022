@@ -2,13 +2,27 @@
     @include column;
     width: 100%;
     z-index: 2;
+    @include desktop {
+        width: 50%;
+    }
+    &--desktop {
+        @include desktop {
+            width: 50.1%;
+        }
+    }
     header {
         align-self: flex-start;
         margin-top: 6vw;
         margin-bottom: 2vw;
         margin-left: 4vw;
+        @include desktop {
+            margin-top: 4vw;
+        }
         h3 {
             margin-bottom: 1vw;
+            @include desktop {
+                font-size: 150%;
+            }
         }
     }
     .line--tertiary {
@@ -17,5 +31,9 @@
         background-color: $colour-tertiary;
         border: none;
         margin: 0;
+        @include desktop {
+            width: 7vw;
+            height: 0.5vw;
+        }
     }
 }

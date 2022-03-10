@@ -1,9 +1,21 @@
 .rest-fig {
     height: 78vw;
+    @include desktop {
+        height: 37.5vw;
+        border-bottom-left-radius: 10vw;
+        border-bottom-right-radius: 10vw;
+        box-shadow: 0 22px 16px 3px $colour-primary;
+    }
     img {
         height: 75vw;
         width: 100vw;
         object-fit: cover;
+        @include desktop {
+            height: 37.5vw;
+            width: 99vw;
+            border-bottom-left-radius: 10vw;
+            border-bottom-right-radius: 10vw;
+        }
     }
     figcaption {
         @include row($justify: space-between);
@@ -14,13 +26,28 @@
         background-color: $background-color-light-darker;
         border-top-left-radius: 10vw;
         border-top-right-radius: 10vw;
+        @include desktop {
+            bottom: 38vw;
+            height: 12vw;
+            background-color: $background-color;
+            padding: 0 9vw;
+            border-radius: 0;
+            border-bottom-left-radius: 10vw;
+            border-bottom-right-radius: 10vw;
+        }
         h1 {
             font-family: $font-title;
             font-size: 190%;
+            @include desktop {
+                font-size: 250%;
+            }
         }
         .hearts {
             i {
                 font-size: 150%;
+                @include desktop {
+                    font-size: 200%;
+                }
             }
             :first-child {
                 position: absolute;

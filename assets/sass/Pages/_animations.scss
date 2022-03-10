@@ -90,6 +90,9 @@
     &:not(:hover) .course__info + .checkbox {
         margin-right: -16vw;
         transition: margin-right 350ms ease-in-out;
+        @include desktop {
+            margin-right: -10vw;
+        }
         .fa-check {
             transform: translateX(0);
         }

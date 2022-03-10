@@ -5,6 +5,9 @@
     @include row;
     h1, h2 {
         width: 43%;
+        @include desktop {
+            width: 40%;
+        }
         .logo {
             width: 100%;
             object-fit: contain;
@@ -16,9 +19,15 @@
             font-size: 5vw;
             margin-left: 6vw;
             margin-bottom: 2vw;
+            @include desktop {
+                font-size: 4vw;
+            }
         }
         h2 {
             margin-left: 18vw;
+            @include desktop {
+                margin-left: 20vw;   
+            }
         }
     }
 }

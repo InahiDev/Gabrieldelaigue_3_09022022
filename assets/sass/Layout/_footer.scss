@@ -4,6 +4,9 @@ footer {
     width: 100%;
     color: #FFF;
     background-color: $background-footer;
+    @include desktop {
+        padding: 7% 10%;
+    }
     h4 {
         font-family: $font-title;
         margin-bottom: 6%;
@@ -12,6 +15,9 @@ footer {
         @include row($justify: flex-start);
         width: 100%;
         margin-bottom: 3%;
+        @include desktop {
+            width: 40%;
+        }
         i {
             width: 6%;
             margin-right: 2%;
