@@ -236,11 +236,7 @@ footer {
   width: 100%;
   color: #FFF;
   background-color: #333333;
-}
-@media all and (min-width: 992px) {
-  footer {
-    padding: 7% 10%;
-  }
+  font-size: 4vw;
 }
 footer h4 {
   font-family: Shrikhand;
@@ -252,11 +248,6 @@ footer .footer-link {
   align-items: center;
   width: 100%;
   margin-bottom: 3%;
-}
-@media all and (min-width: 992px) {
-  footer .footer-link {
-    width: 40%;
-  }
 }
 footer .footer-link i {
   width: 6%;
@@ -519,7 +510,6 @@ footer p {
 @media all and (min-width: 992px) {
   .rest-fig img {
     height: 37.5vw;
-    width: 99vw;
     border-bottom-left-radius: 10vw;
     border-bottom-right-radius: 10vw;
   }
