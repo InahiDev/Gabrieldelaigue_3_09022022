@@ -9,14 +9,8 @@
     background: linear-gradient(to left top, $colour-primary, $colour-secondary);
     border-width: 0;
     box-shadow: $box-shadow-sizing $background-shadow-darker;
-    @include desktop {
-        font-size: 130%;
-    }
     &--accueil {
         margin: 0;
         padding: 4% 0;
-        @include desktop {
-            font-size: 100%;
-        }
     }
 }
