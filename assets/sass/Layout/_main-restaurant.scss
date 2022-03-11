@@ -2,4 +2,10 @@
     @include column;
     background-color: $background-color-light-darker;
     padding-bottom: 10%;
+    @include desktop {
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-bottom: 3%;
+    }
 }

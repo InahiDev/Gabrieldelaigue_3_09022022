@@ -7,24 +7,44 @@
     overflow: hidden;
     box-shadow: $box-shadow-sizing $background-shadow-darker;
     opacity: 0;
+    @include desktop {
+        width: 93%;
+    }
     &__info {
         @include row ($justify: flex-start);
         flex: 1 1 69vw;
         min-width: 69vw;
         padding: 4vw 3vw;
+        @include desktop {
+            flex: 1 1 18vw;
+            min-width: 18vw;
+            padding: 2vw;
+        }
         .course__text {
             flex-grow: 1;
             flex-basis: 57vw;
             overflow: hidden;
+            @include desktop {
+                flex-basis: 13vw;
+            }
             h4 {
                 font-size: 125%;
                 font-weight: 700;
+                @include desktop {
+                    font-size: 60%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
             }
             p {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 margin-top: 2%;
+                @include desktop {
+                    font-size: 45%;
+                }
             }
         }
         .price {
@@ -32,6 +52,11 @@
             flex-basis: 12vw;
             text-align: center;
             font-weight: 700;
+            @include desktop {
+                flex-basis: 3vw;
+                min-width: 3vw;
+                font-size: 60%;
+            }
         }
         
         
@@ -42,6 +67,10 @@
         min-width: 16vw;
         background-color: $colour-tertiary;
         margin-right: -16vw;
+        @include desktop {
+            width: 8vw;
+            min-width: 8vw;
+        }
         .fa-check {
             @include row;
             width: 5vw;
@@ -52,6 +81,10 @@
             background-color: $background-color;
             border-radius: 50%;
             transform: translateX(-80%);
+            @include desktop {
+                width: 3vw;
+                height: 3vw;
+            }
         }
     }
 }

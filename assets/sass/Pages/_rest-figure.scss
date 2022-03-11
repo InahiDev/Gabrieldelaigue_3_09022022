@@ -1,9 +1,19 @@
 .rest-fig {
     height: 78vw;
+    width: 100%;
+    @include desktop {
+        height: 20vw;
+    }
     img {
         height: 75vw;
-        width: 100vw;
+        width: 100%;
         object-fit: cover;
+        @include desktop {
+            height: 20vw;
+            border-bottom-left-radius: 6vw;
+            border-bottom-right-radius: 6vw;
+            object-position: bottom 38% left 50%;
+        }
     }
     figcaption {
         @include row($justify: space-between);
@@ -14,6 +24,14 @@
         background-color: $background-color-light-darker;
         border-top-left-radius: 10vw;
         border-top-right-radius: 10vw;
+        @include desktop {
+            bottom: 8vw;
+            height: 8vw;
+            width: 72%;
+            margin: 0 auto;
+            border-top-left-radius: 8vw;
+            border-top-right-radius: 8vw;
+        }
         h1 {
             font-family: $font-title;
             font-size: 190%;
