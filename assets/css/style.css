@@ -128,7 +128,7 @@ a:visited {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-top: 2%;
+  margin-top: 5px;
 }
 @media all and (min-width: 992px) {
   .course__info .course__text p {
@@ -694,6 +694,7 @@ footer p {
 @media all and (min-width: 992px) {
   .course-type header {
     margin-top: 3vw;
+    margin-left: 2vw;
   }
 }
 .course-type header h3 {
