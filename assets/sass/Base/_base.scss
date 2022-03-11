@@ -2,10 +2,21 @@ body {
     @include column;
     font-family: $font-txt, sans-serif;
     font-size: 4vw;
+    @include desktop {
+        font-size: 2vw;
+    }
 }
 
 main {
     @include column;
+    width: 100%;
+}
+
+.front-desktop {
+    width: 100%;
+    @include desktop {
+        @include row;
+    }
 }
 
 * {

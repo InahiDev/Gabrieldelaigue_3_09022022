@@ -3,16 +3,29 @@
     width: 100%;
     padding: 15% 6%;
     background-color: $background-color-light-darker;
+    @include desktop {
+        @include row ($justify: space-between);
+        flex-flow: row wrap;
+        padding: 6%;
+    }
     h2 {
         font-size: 140%;
         font-weight: 900;
         margin-bottom: 3.75%;
+        @include desktop {
+            width: 100%;
+        }
     }
     article {
         width: 88vw;
         height: 67vw;
         border-radius: 4vw;
         margin: 2.75% 0;
+        @include desktop {
+            width: 47%;
+            height: 36vw;
+        }
+
         a {
             width: 100%;
             height: 100%;
@@ -45,6 +58,10 @@
             top: 3vw;
             right: 3vw;
             background-color: $colour-tertiary;
+            @include desktop {
+                width: 13vw;
+                height: 5vw;
+            }
             &--hidden {
                 display: none;
             }
@@ -57,6 +74,9 @@
         border-bottom-left-radius: 4vw;
         border-bottom-right-radius: 4vw ;
         background-color: $background-color;
+        @include desktop {
+            padding: 0 6%;
+        }
         .hearts {
             margin-right: 4%;
             i {

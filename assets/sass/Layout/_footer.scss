@@ -4,10 +4,27 @@ footer {
     width: 100%;
     color: #FFF;
     background-color: $background-footer;
-    font-size: 4vw;
+    @include desktop {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        padding: 6%;
+    }
+    .footer-half {
+        width: 100%;
+        @include desktop {
+            width: 48%;
+        }
+        > a p {
+            margin-bottom: 3%;
+        }
+    }
     h4 {
         font-family: $font-title;
         margin-bottom: 6%;
+        @include desktop {
+            width: 100%;
+            margin-bottom: 3%;
+        }
     }
     .footer-link {
         @include row($justify: flex-start);
@@ -16,11 +33,9 @@ footer {
         i {
             width: 6%;
             margin-right: 2%;
+            margin-bottom: 0.5%;
             font-size: 75%;
         }
-    }
-    > a {
-        margin-bottom: 3%;
     }
     p {
         color: #FFF;
