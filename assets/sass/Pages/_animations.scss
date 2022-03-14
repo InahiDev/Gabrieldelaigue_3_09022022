@@ -69,10 +69,10 @@
 //Décalage des checkbox
 @keyframes checkbox {
   0%, 20% {
-      transform: translateX(-80%) rotate(180deg);
+      transform: translateX(-80%) rotate(90deg);
   }
   50% {
-      transform: translateX(-50%) rotate(270deg);
+      transform: translateX(-50%) rotate(180deg);
   }
   100% {
       transform: translateX(0) rotate(360deg);
@@ -84,7 +84,7 @@
     margin-right: 0vw;
     transition: margin-right 350ms ease-in-out ;
     .fa-check {
-      animation: checkbox 300ms 50ms linear forwards;
+      animation: checkbox 250ms 50ms linear forwards;
     }
   }
   &:not(:hover) .course__info + .checkbox {
