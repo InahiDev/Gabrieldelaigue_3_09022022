@@ -1,108 +1,108 @@
 //Loading spinner
 @keyframes spinner {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
 }
 @keyframes loader {
-    0%, 100% {
-        opacity: 1;
-        z-index: 1;
-    }
+  0%, 100% {
+      opacity: 1;
+      z-index: 1;
+  }
 }
 .loading-spinner {
-    user-select: none;
-    width: 100%;
-    height: 100vh;
-    opacity: 0;
-    position: fixed;
-    background-color: $background-color;
-    z-index: -1;
-    animation: loader (($spinner-turn * $spinner-iteration) + $spinner-delay + 200ms) 200ms ease-in-out backwards;
-    @include column;
-    .fa-spinner {
-        font-size: 400%;
-        transform: rotate(0deg);
-        background: linear-gradient(to bottom, $colour-primary, $colour-secondary);
-        -webkit-background-clip: text;
-        color: transparent;
-        animation: spinner $spinner-turn ease-in-out $spinner-delay $spinner-iteration backwards;
-    }
+  user-select: none;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  position: fixed;
+  background-color: $background-color;
+  z-index: -1;
+  animation: loader (($spinner-turn * $spinner-iteration) + $spinner-delay + 200ms) 200ms ease-in-out backwards;
+  @include column;
+  .fa-spinner {
+    font-size: 400%;
+    transform: rotate(0deg);
+    background: linear-gradient(to bottom, $colour-primary, $colour-secondary);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: spinner $spinner-turn ease-in-out $spinner-delay $spinner-iteration backwards;
+  }
 }
 
 
 //Apparition des plats
 @keyframes course {
-    from {
-        opacity: 0;
-        transform: translateY(2vw);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(2vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .course {
-   animation: course $course-duration ease-in-out forwards;
-   @for $i from 1 through $course-num {
-       &--#{$i} {
-           animation-delay: $course-delay * $i;
-       }
-   }
+  animation: course $course-duration ease-in-out forwards;
+  @for $i from 1 through $course-num {
+    &--#{$i} {
+      animation-delay: $course-delay * $i;
+    }
+  }
 }
 
 //Remplissage des coeurs
 .card > figcaption .hearts, .rest-fig figcaption .hearts {
-    :first-child:hover {
-        opacity: 1;
-        transition: opacity 300ms ease-in;
-    }
-    :first-child:not(:hover) {
-        opacity: 0;
-        transition: opacity 300ms ease-in;
-    }
+  :first-child:hover {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+  }
+  :first-child:not(:hover) {
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+  }
 }
 
 //Décalage des checkbox
 @keyframes checkbox {
-    0%, 20% {
-        transform: translateX(-80%) rotate(180deg);
-    }
-    50% {
-        transform: translateX(-50%) rotate(270deg);
-    }
-    100% {
-        transform: translateX(0) rotate(360deg);
-    }
+  0%, 20% {
+      transform: translateX(-80%) rotate(180deg);
+  }
+  50% {
+      transform: translateX(-50%) rotate(270deg);
+  }
+  100% {
+      transform: translateX(0) rotate(360deg);
+  }
 }
 
 .course {
-    &:hover .course__info + .checkbox {
-        margin-right: 0vw;
-        transition: margin-right 350ms ease-in-out ;
-        .fa-check {
-            animation: checkbox 300ms 50ms linear forwards;
-        }
+  &:hover .course__info + .checkbox {
+    margin-right: 0vw;
+    transition: margin-right 350ms ease-in-out ;
+    .fa-check {
+      animation: checkbox 300ms 50ms linear forwards;
     }
-    &:not(:hover) .course__info + .checkbox {
-        margin-right: -16vw;
-        transition: margin-right 350ms ease-in-out;
-        @include desktop {
-            margin-right: -8vw;
-        }
-        .fa-check {
-            transform: translateX(0);
-        }
+  }
+  &:not(:hover) .course__info + .checkbox {
+    margin-right: -16vw;
+    transition: margin-right 350ms ease-in-out;
+    @include desktop {
+      margin-right: -8vw;
     }
+    .fa-check {
+      transform: translateX(0);
+    }
+  }
 }
 
 //Survol des boutons
 .button{
-    &:hover {
-    background: linear-gradient(to left top, lighten($colour-primary, 2%), lighten($colour-secondary, 2%));
-    box-shadow: $box-shadow-sizing $background-boxes-shadow;
-    }
+  &:hover {
+  background: linear-gradient(to left top, lighten($colour-primary, 2%), lighten($colour-secondary, 2%));
+  box-shadow: $box-shadow-sizing $background-boxes-shadow;
+  }
 }

@@ -35,83 +35,83 @@
 }
 
 .card {
+  width: 100%;
+  height: 100%;
+  border-radius: 4vw;
+  box-shadow: $box-shadow-sizing $background-color-darker;
+  &__img {
     width: 100%;
+    height: 70%;
+    position: relative;
+    > img {
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 4vw;
+      border-top-right-radius: 4vw;
+      object-fit: cover;
+    }
+    .new {
+      @include row;
+      width: 21vw;
+      height: 8vw;
+      position: absolute;
+      top: 3vw;
+      right: 3vw;
+      background-color: $colour-tertiary;
+      @include desktop {
+        width: 13vw;
+        height: 5vw;
+      }
+      &--hidden {
+        display: none;
+      }
+    }
+  }
+  > figcaption {
+    @include row($justify: space-between);
+    height: 30%;
+    padding: 0 4%;
+    border-bottom-left-radius: 4vw;
+    border-bottom-right-radius: 4vw ;
+    background-color: $background-color;
+    @include desktop {
+      padding: 0 6%;
+    }
+    .hearts {
+      margin-right: 4%;
+      i {
+        font-size: 130%;
+      }
+      :first-child {
+        position: absolute;
+        background: linear-gradient(to bottom, $colour-primary, $colour-secondary);
+        -webkit-background-clip: text;
+        color: transparent;
+        opacity: 0;
+      }
+    }
+  }
+  &__info {
+    @include column($justify: space-around, $align: flex-start);
     height: 100%;
-    border-radius: 4vw;
-    box-shadow: $box-shadow-sizing $background-color-darker;
-    &__img {
-        width: 100%;
-        height: 70%;
-        position: relative;
-        > img {
-            width: 100%;
-            height: 100%;
-            border-top-left-radius: 4vw;
-            border-top-right-radius: 4vw;
-            object-fit: cover;
-        }
-        .new {
-            @include row;
-            width: 21vw;
-            height: 8vw;
-            position: absolute;
-            top: 3vw;
-            right: 3vw;
-            background-color: $colour-tertiary;
-            @include desktop {
-                width: 13vw;
-                height: 5vw;
-            }
-            &--hidden {
-                display: none;
-            }
-        }
+    padding: 5% 0;
+    h3 {
+      font-size: 120%;
+      font-weight: 900;
     }
-    > figcaption {
-        @include row($justify: space-between);
-        height: 30%;
-        padding: 0 4%;
-        border-bottom-left-radius: 4vw;
-        border-bottom-right-radius: 4vw ;
-        background-color: $background-color;
-        @include desktop {
-            padding: 0 6%;
-        }
-        .hearts {
-            margin-right: 4%;
-            i {
-                font-size: 130%;
-            }
-            :first-child {
-                position: absolute;
-                background: linear-gradient(to bottom, $colour-primary, $colour-secondary);
-                -webkit-background-clip: text;
-                color: transparent;
-                opacity: 0;
-            }
-        }
+    p {
+      font-size: 110%;
+      font-weight: 400;
     }
-    &__info {
-        @include column($justify: space-around, $align: flex-start);
-        height: 100%;
-        padding: 5% 0;
-        h3 {
-            font-size: 120%;
-            font-weight: 900;
-        }
-        p {
-            font-size: 110%;
-            font-weight: 400;
-        }
-    }
+  }
 }
 
 //Positionnement des images dans les cards
 .restaurants :nth-child(2) img, .restaurants :nth-child(4) img, .restaurants :nth-child(5) img {
-    object-position: center bottom;
+  object-position: center bottom;
 }
 
 .restaurants :nth-child(3) img {
-    object-position: left 50% bottom 38%;
+  object-position: left 50% bottom 38%;
 }
 

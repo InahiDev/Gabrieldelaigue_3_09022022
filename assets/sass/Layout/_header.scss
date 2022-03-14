@@ -1,37 +1,37 @@
 .header {
-    width: 100%;
-    padding-top: 5%;
-    padding-bottom: 3%;
-    @include row;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  @include row;
+  @include desktop {
+    padding-top: 2%;
+    padding-bottom: 1%;
+  }
+  h1, h2 {
+    width: 43%;
     @include desktop {
-        padding-top: 2%;
-        padding-bottom: 1%;
+      width: 30%;
     }
-    h1, h2 {
-        width: 43%;
-        @include desktop {
-            width: 30%;
-        }
-        .logo {
-            width: 100%;
-            object-fit: contain;
-        }
+    .logo {
+      width: 100%;
+      object-fit: contain;
     }
-    &--menu {
-        justify-content: flex-start;
-        .fa-arrow-left {
-            font-size: 5vw;
-            margin-left: 6vw;
-            margin-bottom: 2vw;
-            @include desktop {
-                font-size: 3vw;
-            }
-        }
-        h2 {
-            margin-left: 18%;
-            @include desktop {
-                margin-left: 27%;
-            }
-        }
+  }
+  &--menu {
+    justify-content: flex-start;
+    .fa-arrow-left {
+      font-size: 5vw;
+      margin-left: 6vw;
+      margin-bottom: 2vw;
+      @include desktop {
+        font-size: 3vw;
+      }
     }
+    h2 {
+      margin-left: 18%;
+      @include desktop {
+        margin-left: 27%;
+      }
+    }
+  }
 }

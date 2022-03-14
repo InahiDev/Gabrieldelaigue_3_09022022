@@ -1,43 +1,43 @@
 footer {
-    @include column ($align: flex-start);
-    padding: 7% 6%;
+  @include column ($align: flex-start);
+  padding: 7% 6%;
+  width: 100%;
+  color: #FFF;
+  background-color: $background-footer;
+  @include desktop {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding: 6%;
+  }
+  .footer-half {
     width: 100%;
-    color: #FFF;
-    background-color: $background-footer;
     @include desktop {
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        padding: 6%;
+      width: 48%;
     }
-    .footer-half {
-        width: 100%;
-        @include desktop {
-            width: 48%;
-        }
-        > a p {
-            margin-bottom: 3%;
-        }
+    > a p {
+      margin-bottom: 3%;
     }
-    h4 {
-        font-family: $font-title;
-        margin-bottom: 6%;
-        @include desktop {
-            width: 100%;
-            margin-bottom: 3%;
-        }
+  }
+  h4 {
+    font-family: $font-title;
+    margin-bottom: 6%;
+    @include desktop {
+      width: 100%;
+      margin-bottom: 3%;
     }
-    .footer-link {
-        @include row($justify: flex-start);
-        width: 100%;
-        margin-bottom: 3%;
-        i {
-            width: 6%;
-            margin-right: 2%;
-            margin-bottom: 0.5%;
-            font-size: 75%;
-        }
+  }
+  .footer-link {
+    @include row($justify: flex-start);
+    width: 100%;
+    margin-bottom: 3%;
+    i {
+      width: 6%;
+      margin-right: 2%;
+      margin-bottom: 0.5%;
+      font-size: 75%;
     }
-    p {
-        color: #FFF;
-    }
+  }
+  p {
+    color: #FFF;
+  }
 }

@@ -1,32 +1,32 @@
 .course-type {
-    @include column;
-    width: 100%;
-    z-index: 2;
+  @include column;
+  width: 100%;
+  z-index: 2;
+  @include desktop {
+    width: 30%;
+  }
+  header {
+    align-self: flex-start;
+    margin-top: 6vw;
+    margin-bottom: 2vw;
+    margin-left: 4vw;
     @include desktop {
-        width: 30%;
+      margin-top: 3vw;
+      margin-left: 2vw;
     }
-    header {
-        align-self: flex-start;
-        margin-top: 6vw;
-        margin-bottom: 2vw;
-        margin-left: 4vw;
-        @include desktop {
-            margin-top: 3vw;
-            margin-left: 2vw;
-        }
-        h3 {
-            margin-bottom: 1vw;
-        }
+    h3 {
+      margin-bottom: 1vw;
     }
-    .line--tertiary {
-        width: 10vw;
-        height: 1vw;
-        background-color: $colour-tertiary;
-        border: none;
-        margin: 0;
-        @include desktop {
-            width: 6vw;
-            height: .5vw;
-        }
+  }
+  .line--tertiary {
+    width: 10vw;
+    height: 1vw;
+    background-color: $colour-tertiary;
+    border: none;
+    margin: 0;
+    @include desktop {
+      width: 6vw;
+      height: .5vw;
     }
+  }
 }
