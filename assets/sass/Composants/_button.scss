@@ -10,9 +10,9 @@
     border-width: 0;
     box-shadow: $box-shadow-sizing $background-shadow-darker;
     @include desktop {
-        width: 33%;
+        width: 27%;
         margin: 5% 0;
-        padding: 3% 0;
+        padding: 2% 0;
     }
     &--accueil {
         width: 50%;
