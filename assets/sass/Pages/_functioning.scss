@@ -4,8 +4,8 @@
 	margin: 13% 0;
 	@include column($align: flex-start);
 	@include desktop {
-		width: 48%;
-		margin: 4% 0;
+		width: 37%;
+		margin: 2% 0;
 	}
 	h2 {
 		font-size: 140%;
@@ -13,7 +13,8 @@
 		margin-left: 6%;
 		margin-bottom: 4%;
 		@include desktop {
-			margin-left: 9%;
+			font-size: 80%;
+			margin: 4% 0 2% 15%;
 		}
 	}
 	&__stage {
@@ -23,10 +24,12 @@
 		height: 16vw;
 		margin: 2.5% 0;
 		background-color: $background-color-light-darker;
-		border-radius: 5vw;
+		border-radius: min(96px, 5vw);
 		box-shadow: $box-shadow-sizing $background-color-darker;
 		@include desktop {
-			height: 10vw;
+			width: 65%;
+			margin: 5% 0;
+			height: min(96px, 5vw);
 		}
 		p {
 			@include row;
@@ -39,9 +42,10 @@
 			background-color: $colour-primary;
 			border-radius: 50%;
 			@include desktop {
-				width: 4vw;
-				height: 4vw;
-				left: -2vw;
+				width: min(38px, 2vw);
+				height: min(38px, 2vw);
+				left: max(-19px, -1vw);
+				font-size: 60%;
 			}
 		}
 		i {
@@ -49,11 +53,15 @@
 			color: lighten($font-color, 50%);
 			margin: 0 6vw 0 3vw;
 			@include desktop {
-				margin: 0 3vw 0 1vw;
+				margin: 0 min(57px, 3vw) 0 min(19px, 1vw);
+				font-size: 80%;
 			}
 		}
 		h3 {
 			font-weight: 700;
+			@include desktop {
+				font-size: 60%;
+			}
 		}
 		&--background {
 			background-color: lighten($colour-primary, 36%);

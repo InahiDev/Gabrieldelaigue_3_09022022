@@ -1,32 +1,38 @@
 body {
-    @include column;
-    font-family: $font-txt, sans-serif;
-    font-size: 4vw;
-    @include desktop {
-        font-size: min(2vw, 38px);
-    }
+  @include column;
+  font-family: $font-txt, sans-serif;
+  font-size: 4vw;
+  @include desktop {
+    font-size: min(2vw, 38px);
+  }
 }
 
 main {
-    @include column;
-    width: 100%;
+  @include column;
+  width: 100%;
+  @include desktop {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
 }
 
 .front-desktop {
-    width: 100%;
-    @include desktop {
-        @include row;
-    }
+  width: 100%;
+  @include desktop {
+    @include row($justify: space-between);
+    flex-direction: row-reverse;
+    padding: 0 2% 0 1%;
+  }
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  color: black;
+  &:visited {
     color: black;
-    &:visited {
-        color: black;
-    }
+  }
 }

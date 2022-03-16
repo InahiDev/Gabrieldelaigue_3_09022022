@@ -36,10 +36,16 @@
     h1 {
       font-family: $font-title;
       font-size: 190%;
+      @include desktop {
+        font-size: 140%;
+      }
     }
     .hearts {
       i {
         font-size: 150%;
+        @include desktop {
+          font-size: 100%;
+        }
       }
       :first-child {
         position: absolute;

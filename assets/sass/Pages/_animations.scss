@@ -1,16 +1,16 @@
 //Loading spinner
 @keyframes spinner {
   from {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes loader {
   0%, 100% {
-      opacity: 1;
-      z-index: 1;
+    opacity: 1;
+    z-index: 2;
   }
 }
 .loading-spinner {
@@ -69,13 +69,13 @@
 //Décalage des checkbox
 @keyframes checkbox {
   0%, 20% {
-      transform: translateX(-80%) rotate(90deg);
+    transform: translateX(-80%) rotate(90deg);
   }
   50% {
-      transform: translateX(-50%) rotate(180deg);
+    transform: translateX(-50%) rotate(180deg);
   }
   100% {
-      transform: translateX(0) rotate(360deg);
+    transform: translateX(0) rotate(360deg);
   }
 }
 
@@ -91,7 +91,7 @@
     margin-right: -16vw;
     transition: margin-right 350ms ease-in-out;
     @include desktop {
-      margin-right: min(-153px, -5vw);
+      margin-right: max(-153px, -8vw);
     }
     .fa-check {
       transform: translateX(0);

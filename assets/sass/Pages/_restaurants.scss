@@ -7,13 +7,17 @@
         @include row ($justify: space-between);
         flex-flow: row wrap;
         padding: 6%;
+        border-top-left-radius: 65px;
+        border-top-right-radius: 65px;
     }
     h2 {
         font-size: 140%;
         font-weight: 900;
         margin-bottom: 3.75%;
         @include desktop {
-            width: 100%;
+          font-size: 80%;
+          width: 100%;
+          margin-bottom: 1%;
         }
     }
     article {
@@ -22,14 +26,18 @@
         border-radius: 4vw;
         margin: 2.75% 0;
         @include desktop {
-            width: 47%;
-            height: 36vw;
+            width: 23%;
+            height: min(345px, 18vw);
+            border-radius: min(19px, 1vw);
         }
 
         a {
             width: 100%;
             height: 100%;
             border-radius: 4vw;
+            @include desktop {
+              border-radius: min(19px, 1vw);
+            }
         }
     }
 }
@@ -37,7 +45,7 @@
 .card {
   width: 100%;
   height: 100%;
-  border-radius: 4vw;
+  border-radius: 50px;
   box-shadow: $box-shadow-sizing $background-color-darker;
   &__img {
     width: 100%;
@@ -49,6 +57,10 @@
       border-top-left-radius: 4vw;
       border-top-right-radius: 4vw;
       object-fit: cover;
+      @include desktop {
+        border-top-left-radius: min(19px, 1vw);
+        border-top-right-radius: min(19px, 1vw);
+      }
     }
     .new {
       @include row;
@@ -59,8 +71,11 @@
       right: 3vw;
       background-color: $colour-tertiary;
       @include desktop {
-        width: 13vw;
-        height: 5vw;
+        width: min(115px, 6vw);
+        height: min(60px, 3vw);
+        font-size: 60%;
+        top: min(38px, 2vw);
+        right: min(38px, 2vw)
       }
       &--hidden {
         display: none;
@@ -72,15 +87,20 @@
     height: 30%;
     padding: 0 4%;
     border-bottom-left-radius: 4vw;
-    border-bottom-right-radius: 4vw ;
+    border-bottom-right-radius: 4vw;
     background-color: $background-color;
     @include desktop {
       padding: 0 6%;
+      border-bottom-left-radius: min(19px, 1vw);
+      border-bottom-right-radius: min(19px, 1vw);
     }
     .hearts {
       margin-right: 4%;
       i {
         font-size: 130%;
+        @include desktop {
+          font-size: 90%;
+        }
       }
       :first-child {
         position: absolute;
@@ -88,6 +108,14 @@
         -webkit-background-clip: text;
         color: transparent;
         opacity: 0;
+        z-index: 1;
+      }
+      :last-child {
+        @include desktop {
+          position: relative;
+          bottom: 2px;
+          z-index: 0;
+        }
       }
     }
   }
@@ -98,10 +126,16 @@
     h3 {
       font-size: 120%;
       font-weight: 900;
+      @include desktop{
+        font-size: 80%;
+      }
     }
     p {
       font-size: 110%;
       font-weight: 400;
+      @include desktop {
+        font-size: 60%;
+      }
     }
   }
 }

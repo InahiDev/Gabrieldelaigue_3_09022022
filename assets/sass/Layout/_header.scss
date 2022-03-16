@@ -4,27 +4,41 @@
   padding-bottom: 3%;
   @include row;
   @include desktop {
-    padding-top: 2%;
-    padding-bottom: 1%;
+    max-width: 1920px;
+    padding-top: 1%;
+    padding-bottom: .5%;
   }
   h1, p {
     font-family: $font-title;
     font-size: 200%;
   }
+  &--accueil {
+    @include desktop {
+      width: 26%;
+      position: absolute;
+      top: 8%;
+      @include column;
+      h1 {
+        font-size: 230%;
+        text-shadow: 4px 8px #D6D6D6;
+      }
+    }
+  }
   &--menu {
     justify-content: flex-start;
     .fa-arrow-left {
       font-size: 125%;
-      margin-left: 6vw;
-      margin-bottom: 2vw;
+      margin-left: min(115px, 6vw);
+      margin-bottom: min(38px, 2vw);
       @include desktop {
-        font-size: 150%;
+        font-size: 130%;
       }
     }
     p {
       margin-left: 18%;
       @include desktop {
-        margin-left: 29%;
+        margin-left: 33%;
+        font-size: 150%;
       }
     }
   }

@@ -1,43 +1,56 @@
 footer {
-  @include column ($align: flex-start);
-  padding: 7% 6%;
   width: 100%;
-  color: #FFF;
   background-color: $background-footer;
-  @include desktop {
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    padding: 6%;
-  }
-  .footer-half {
+  .center-footer {
     width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    @include column ($align: flex-start);
+    padding: 7% 4%;
+    width: 100%;
+    color: #FFF;
     @include desktop {
-      width: 48%;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      padding: min(115px, 6%);
     }
-    > a p {
-      margin-bottom: 3%;
+    .footer-half {
+      width: 100%;
+      @include desktop {
+        width: 48%;
+      }
+      > a p {
+        margin-bottom: 3%;
+      }
     }
-  }
-  h4 {
-    font-family: $font-title;
-    margin-bottom: 6%;
-    @include desktop {
+    h4 {
+      font-family: $font-title;
+      margin-bottom: 6%;
+      @include desktop {
+        width: 100%;
+        margin-bottom: 3%;
+        font-size: 80%;
+      }
+    }
+    .footer-link {
+      @include row($justify: flex-start);
       width: 100%;
       margin-bottom: 3%;
+      i {
+        width: 6%;
+        margin-right: 2%;
+        margin-bottom: 0.5%;
+        font-size: 75%;
+        @include desktop {
+          font-size: 65%;
+        }
+      }
     }
-  }
-  .footer-link {
-    @include row($justify: flex-start);
-    width: 100%;
-    margin-bottom: 3%;
-    i {
-      width: 6%;
-      margin-right: 2%;
-      margin-bottom: 0.5%;
-      font-size: 75%;
+    p {
+      color: #FFF;
+      @include desktop {
+        font-size: 80%;
+      }
     }
-  }
-  p {
-    color: #FFF;
   }
 }
