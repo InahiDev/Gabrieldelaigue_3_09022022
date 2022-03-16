@@ -91,7 +91,7 @@
     margin-right: -16vw;
     transition: margin-right 350ms ease-in-out;
     @include desktop {
-      margin-right: -8vw;
+      margin-right: min(-153px, -5vw);
     }
     .fa-check {
       transform: translateX(0);

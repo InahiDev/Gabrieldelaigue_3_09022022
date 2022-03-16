@@ -2,16 +2,16 @@
   height: 78vw;
   width: 100%;
   @include desktop {
-    height: 20vw;
+    height: min(384px, 20vw);
   }
   img {
     height: 75vw;
     width: 100%;
     object-fit: cover;
     @include desktop {
-      height: 20vw;
-      border-bottom-left-radius: 6vw;
-      border-bottom-right-radius: 6vw;
+      height: min(384px, 20vw);
+      border-bottom-left-radius: min(115px, 6vw);
+      border-bottom-right-radius: min(115px, 6vw);
       object-position: bottom 38% left 50%;
     }
   }
@@ -25,12 +25,13 @@
     border-top-left-radius: 10vw;
     border-top-right-radius: 10vw;
     @include desktop {
-      bottom: 8vw;
-      height: 8vw;
+      bottom: min(153px, 8vw);
+      height: min(153px, 8vw);
       width: 72%;
       margin: 0 auto;
-      border-top-left-radius: 8vw;
-      border-top-right-radius: 8vw;
+      padding: 0 min(115px, 6vw);
+      border-top-left-radius: min(90px, 6vw);
+      border-top-right-radius: min(90px, 6vw);
     }
     h1 {
       font-family: $font-title;

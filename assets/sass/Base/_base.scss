@@ -3,7 +3,7 @@ body {
     font-family: $font-txt, sans-serif;
     font-size: 4vw;
     @include desktop {
-        font-size: 2vw;
+        font-size: min(2vw, 38px);
     }
 }
 

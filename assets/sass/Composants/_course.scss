@@ -1,90 +1,90 @@
 .course {
-    @include row ($justify: space-between, $align: stretch);
-    width: 93vw;
-    margin: 2vw 0;
-    background-color: $background-color;
-    border-radius: 3vw;
-    overflow: hidden;
-    box-shadow: $box-shadow-sizing $background-shadow-darker;
-    opacity: 0;
+  @include row ($justify: space-between, $align: stretch);
+  width: 93vw;
+  margin: 2vw 0;
+  background-color: $background-color;
+  border-radius: 3vw;
+  overflow: hidden;
+  box-shadow: $box-shadow-sizing $background-shadow-darker;
+  opacity: 0;
+  @include desktop {
+		border-radius: min(38px, 2vw);
+		margin: min(38px, 2vw) 0;
+    width: 93%;
+  }
+  &__info {
+    @include row ($justify: flex-start);
+    flex: 1 1 69vw;
+    min-width: 69vw;
+    padding: 4vw 3vw;
     @include desktop {
-        width: 93%;
+      flex: 1 1 min(345px, 18vw);
+      min-width: min(345px, 18vw);
+      padding: min(38.4px, 2vw);
     }
-    &__info {
-        @include row ($justify: flex-start);
-        flex: 1 1 69vw;
-        min-width: 69vw;
-        padding: 4vw 3vw;
+    .course__text {
+      flex-grow: 1;
+      flex-basis: 57vw;
+      overflow: hidden;
+      @include desktop {
+        flex-basis: min(250px, 13vw);
+      }
+      h3 {
+        font-size: 125%;
+        font-weight: 700;
         @include desktop {
-            flex: 1 1 18vw;
-            min-width: 18vw;
-            padding: 2vw;
+          font-size: 60%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
-        .course__text {
-            flex-grow: 1;
-            flex-basis: 57vw;
-            overflow: hidden;
-            @include desktop {
-                flex-basis: 13vw;
-            }
-            h4 {
-                font-size: 125%;
-                font-weight: 700;
-                @include desktop {
-                    font-size: 60%;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-            }
-            p {
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                margin-top: 5px;
-                @include desktop {
-                    font-size: 45%;
-                }
-            }
-        }
-        .price {
-            align-self: flex-end;
-            flex-basis: 12vw;
-            text-align: center;
-            font-weight: 700;
-            @include desktop {
-                flex-basis: 3vw;
-                min-width: 3vw;
-                font-size: 60%;
-            }
-        }
-        
-        
-    }
-    .checkbox {
-        @include row;
-        width: 16vw;
-        min-width: 16vw;
-        background-color: $colour-tertiary;
-        margin-right: -16vw;
+      }
+      p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 5px;
         @include desktop {
-            width: 8vw;
-            min-width: 8vw;
+          font-size: 45%;
         }
-        .fa-check {
-            @include row;
-            width: 5vw;
-            height: 5vw;
-            font-size: 90%;
-            color: $colour-tertiary;
-            transform: rotate(180deg);
-            background-color: $background-color;
-            border-radius: 50%;
-            transform: translateX(-80%);
-            @include desktop {
-                width: 3vw;
-                height: 3vw;
-            }
-        }
+      }
     }
+    .price {
+      align-self: flex-end;
+      flex-basis: 12vw;
+      text-align: center;
+      font-weight: 700;
+      @include desktop {
+        flex-basis: min(58px, 3vw);
+        min-width: min(58px, 3vw);
+        font-size: 60%;
+      }
+    }   
+  }
+  .checkbox {
+    @include row;
+    width: 16vw;
+    min-width: 16vw;
+    background-color: $colour-tertiary;
+    margin-right: -16vw;
+    @include desktop {
+      width: min(96px, 5vw);
+      min-width: min(153px, 8vw);
+    }
+    .fa-check {
+      @include row;
+      width: 5vw;
+      height: 5vw;
+      font-size: 90%;
+      color: $colour-tertiary;
+      transform: rotate(180deg);
+      background-color: $background-color;
+      border-radius: 50%;
+      transform: translateX(-80%);
+      @include desktop {
+        width: min(57px, 3vw);
+        height: min(57px, 3vw);
+      }
+    }
+  }
 }
