@@ -20,7 +20,7 @@
       @include column;
       h1 {
         font-size: 230%;
-        text-shadow: 4px 8px #D6D6D6;
+        text-shadow: 2px 6px $colour-tertiary, 4px 12px $colour-secondary;
       }
     }
   }

@@ -9,3 +9,8 @@
     padding-bottom: 3%;
   }
 }
+
+.menu-desktop {
+  width: 100%;
+  @include column;
+}

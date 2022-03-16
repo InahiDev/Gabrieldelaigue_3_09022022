@@ -7,14 +7,13 @@
   }
   header {
     align-self: flex-start;
-    margin-top: 6vw;
-    margin-bottom: 2vw;
-    margin-left: 4vw;
+    margin: min(38px, 2vw) min(76px, 4vw);
     @include desktop {
       margin-top: min(57px, 3vw);
       margin-left: min(38px, 2vw);
     }
     h2 {
+      font-size: 115%;
       margin-bottom: min(19px, 1vw);
       @include desktop {
         font-size: 80%;
