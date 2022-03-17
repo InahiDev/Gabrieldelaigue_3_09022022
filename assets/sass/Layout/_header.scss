@@ -39,6 +39,7 @@
       @include desktop {
         margin-left: 33%;
         font-size: 150%;
+        text-shadow: 2px 6px $colour-tertiary, 4px 12px $colour-secondary;
       }
     }
   }

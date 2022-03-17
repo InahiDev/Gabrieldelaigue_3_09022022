@@ -10,8 +10,8 @@
     object-fit: cover;
     @include desktop {
       height: min(384px, 20vw);
-      border-bottom-left-radius: min(115px, 6vw);
-      border-bottom-right-radius: min(115px, 6vw);
+      border-bottom-left-radius: min(57px, 3vw);
+      border-bottom-right-radius: min(57px, 3vw);
       object-position: bottom 38% left 50%;
     }
   }
@@ -29,15 +29,15 @@
       height: min(153px, 8vw);
       width: 72%;
       margin: 0 auto;
-      padding: 0 min(115px, 6vw);
-      border-top-left-radius: min(90px, 6vw);
-      border-top-right-radius: min(90px, 6vw);
+      padding: 0 min(96px, 5vw);
+      border-top-left-radius: min(57px, 3vw);
+      border-top-right-radius: min(57px, 3vw);
     }
     h1 {
       font-family: $font-title;
       font-size: 190%;
       @include desktop {
-        font-size: 140%;
+        font-size: 100%;
       }
     }
     .hearts {

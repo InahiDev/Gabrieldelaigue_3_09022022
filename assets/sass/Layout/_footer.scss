@@ -42,14 +42,14 @@ footer {
         margin-bottom: 0.5%;
         font-size: 75%;
         @include desktop {
-          font-size: 65%;
+          font-size: 55%;
         }
       }
     }
     p {
       color: #FFF;
       @include desktop {
-        font-size: 80%;
+        font-size: 70%;
       }
     }
   }
