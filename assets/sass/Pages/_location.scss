@@ -5,11 +5,11 @@
   background-color: $background-color-darker;
   box-shadow: inset 0 2px 5px #D6D6D6;
   @include desktop {
-    width: 27%;
-    border-radius: 5% / 50%;
+    width: min(518px, 27%);
+    border-radius: min(31px, 6%) / 50%;
     padding: 1% 0;
     position: absolute;
-    top: 23%;
+    top: 21%;
     box-shadow: inset 0 2px 5px #D6D6D6, $box-shadow-sizing #D6D6D6;
   }
   i {
